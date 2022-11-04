@@ -41,7 +41,7 @@ const Drawer0 = (props) => {
         className={`wrapper ${
           wrapperClicked === false ? "slide-down" : "slide-up"
         } ${
-          `${Math.floor(dist?.distance)}` > 40
+          `${Math.floor(dist?.distance)}` < 40
             ? "value-present"
             : "value-absent"
         } `}
@@ -67,13 +67,13 @@ const Drawer0 = (props) => {
                 className={`distance-from-mint ${
                   wrapperClicked === false ? "slide-down" : "slide-up"
                 } ${
-                  `${Math.floor(dist?.distance)}` > 40
+                  `${Math.floor(dist?.distance)}` < 40
                     ? "value-present"
                     : "value-absent"
                 }`}
               >
                 <div>
-                  {`${Math.floor(dist?.distance)}` > 40 ? (
+                  {`${Math.floor(dist?.distance)}` < 40 ? (
                     wrapperClicked === false ? (
                       <span style={{ color: "#EF0066" }}>
                         Click Here to Mint
@@ -124,7 +124,7 @@ const Drawer0 = (props) => {
             </div>
             <hr style={{ color: "white" }} />
             <div className="Minting">
-              {`${Math.floor(dist?.distance)}` > 40 ? (
+              {`${Math.floor(dist?.distance)}` < 40 ? (
                 <button
                   className="Mint-it"
                   onClick={() => {
