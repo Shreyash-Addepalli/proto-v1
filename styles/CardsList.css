@@ -1,0 +1,70 @@
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  color: white;
+  padding: 60px 24px 24px 34px;
+}
+img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 13px;
+  width: 300px;
+  height: 120px;
+}
+
+.border-2 {
+  border: 6px solid grey;
+  width: 104px;
+  height: 104px;
+  border-radius: 10px;
+}
+
+.details {
+  padding-left: 18px;
+}
+
+.event {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: Turret Road;
+}
+
+.location {
+  font-size: 15px;
+  padding-top: 7px;
+  color: #ef0066;
+  font-family: Turret Road;
+  font-weight: 400;
+}
+
+.to-map1 {
+  text-align: left;
+  padding-top: 17px;
+}
+.map {
+  width: 120px;
+  height: 25px;
+  border-radius: 5px;
+  font-family: Turret Road;
+}
+
+.venue {
+  font-size: 11px;
+  padding-top: 7px;
+  font-family: "Turret Road", cursive;
+  font-weight: 200;
+}
+
+.to-map2 {
+  text-align: left;
+  padding-top: 30px;
+}
