@@ -7,6 +7,7 @@ const Landing = () => {
   useEffect(() => {
     setTimeout(() => {
       setshowPopup(!showPopup);
+      window.scrollTo(0,1);
     }, 3000);
   }, []);
 
