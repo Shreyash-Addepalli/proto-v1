@@ -45,11 +45,7 @@ const Instructions = () => {
             </li>
           </ol>
           Give us a shoutout on twitter{" "}
-          <a
-            onClick={() => {
-              window.open("https://twitter.com/de_planDAO");
-            }}
-          >
+          <a href="https://twitter.com/de_planDAO">
             @de_planDAO
           </a>{" "}
           & reach out. With that set, LFG! <span>🚀🚀</span>
