@@ -6,17 +6,10 @@ body {
   margin: 0;
   font-family: Turret Road;
   min-height: -webkit-fill-available;
+  color: white;
+    background: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
 
 .map-container {
   top: 0;
