@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { headingDistanceTo } from "geolocation-utils";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 var dist;
 
 const Drawer0 = (props) => {
@@ -40,7 +41,7 @@ const Drawer0 = (props) => {
         className={`wrapper ${
           wrapperClicked === false ? "slide-down" : "slide-up"
         } ${
-          `${Math.floor(dist?.distance)}` < 40
+          `${Math.floor(dist?.distance)}` > 40
             ? "value-present"
             : "value-absent"
         } `}
@@ -49,13 +50,11 @@ const Drawer0 = (props) => {
           <div className="menu-opener">
             <div className="btn">
               <a href="#">
-                <i
-                  className={`fa fa-solid ${
-                    wrapperClicked === false
-                      ? "fa-chevron-up"
-                      : "fa-chevron-down"
-                  }`}
-                ></i>
+                {wrapperClicked === false ? (
+                  <IoIosArrowUp />
+                ) : (
+                  <IoIosArrowDown />
+                )}
               </a>
               <hr
                 style={{
@@ -68,13 +67,13 @@ const Drawer0 = (props) => {
                 className={`distance-from-mint ${
                   wrapperClicked === false ? "slide-down" : "slide-up"
                 } ${
-                  `${Math.floor(dist?.distance)}` < 40
+                  `${Math.floor(dist?.distance)}` > 40
                     ? "value-present"
                     : "value-absent"
                 }`}
               >
                 <div>
-                  {`${Math.floor(dist?.distance)}` < 40 ? (
+                  {`${Math.floor(dist?.distance)}` > 40 ? (
                     wrapperClicked === false ? (
                       <span style={{ color: "#EF0066" }}>
                         Click Here to Mint
@@ -125,7 +124,7 @@ const Drawer0 = (props) => {
             </div>
             <hr style={{ color: "white" }} />
             <div className="Minting">
-              {`${Math.floor(dist?.distance)}` < 40 ? (
+              {`${Math.floor(dist?.distance)}` > 40 ? (
                 <button
                   className="Mint-it"
                   onClick={() => {
