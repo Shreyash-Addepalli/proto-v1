@@ -11,9 +11,9 @@ import "../components/Drawer/Drawer.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* <Head>
+      <Head>
         <meta name="viewport" content="viewport-fit=cover" />
-      </Head> */}
+      </Head>
       <Component {...pageProps} />
     </>
   );
