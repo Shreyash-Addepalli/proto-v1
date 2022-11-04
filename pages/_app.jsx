@@ -7,7 +7,7 @@ import "../components/ActiveMintsNavbar/ActiveMintsNavbar.css";
 import "../styles/CardsList.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "../components/Drawer/Drawer.css";
-//import Head from "next/head";
+import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   return (
     <>
