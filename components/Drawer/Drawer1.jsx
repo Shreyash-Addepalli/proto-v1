@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { headingDistanceTo } from "geolocation-utils";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 var dist;
 
 const Drawer1 = (props) => {
@@ -49,13 +50,11 @@ const Drawer1 = (props) => {
           <div className="menu-opener">
             <div className="btn">
               <a href="#">
-                <i
-                  className={`fa fa-solid ${
-                    wrapperClicked === false
-                      ? "fa-chevron-up"
-                      : "fa-chevron-down"
-                  }`}
-                ></i>
+              {wrapperClicked === false ? (
+                  <IoIosArrowUp />
+                ) : (
+                  <IoIosArrowDown />
+                )}
               </a>
               <hr
                 style={{
