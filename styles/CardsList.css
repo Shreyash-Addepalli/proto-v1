@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   grid-gap: 20px;
   color: white;
-  padding: 60px 24px 24px 34px;
+  padding: 60px 24px 24px 24px;
 }
 img {
   width: 100px;
