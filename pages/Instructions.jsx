@@ -21,8 +21,16 @@ const Instructions = () => {
             </li>
             <li>
               {" "}
-              For iOS users, we recommend using the app on Safari with the Glow
-              wallet extension enabled.
+              For iOS users, we recommend using the app on Safari with the <strong>Glow
+              wallet extension</strong> enabled.
+            </li>
+            <li>
+              {" "}
+              For iOS users: Please hide your toolbar while using the app & allow the Glow wallet access to it.
+            </li>
+            <li>
+              {" "}
+              For android users: We recommend using the app with Solflare.
             </li>
             <li>
               {" "}
