@@ -127,7 +127,7 @@ const Drawer1 = (props) => {
                 <button
                   className="Mint-it"
                   onClick={() => {
-                    window.open("https://sage-daifuku-5057eb.netlify.app/");
+                    window.open("https://deplan-refi.netlify.app/");
                   }}
                 >
                   Select Wallet
